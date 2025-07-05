@@ -211,3 +211,7 @@ __marimo__/
 
 # PyEnv files
 .python-version
+
+# Temporarily ignoring these files
+pre-commit-hooks/build
+pre-commit-hooks/*.egg-info
