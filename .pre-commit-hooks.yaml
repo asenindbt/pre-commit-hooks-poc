@@ -1,6 +1,6 @@
 # .pre-commit-hooks.yaml
-- id: some-id
-  name: some-name
+- id: print-arguments
+  name: print arguments
   description: some description
   entry: print-arguments
   language: python
