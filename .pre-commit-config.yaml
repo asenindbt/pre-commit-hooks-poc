@@ -3,3 +3,7 @@ repos:
     rev: v5.0.0
     hooks:
     -   id: trailing-whitespace
+-   repo: https://github.com/asenindbt/pre-commit-hooks-poc
+    rev: v0.1.0
+    hooks:
+    -   id: some-id
