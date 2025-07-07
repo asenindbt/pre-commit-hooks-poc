@@ -1,9 +1,9 @@
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
-    hooks:
-    -   id: trailing-whitespace
+#-   repo: https://github.com/pre-commit/pre-commit-hooks
+#    rev: v5.0.0
+#    hooks:
+#    -   id: trailing-whitespace
 -   repo: https://github.com/asenindbt/pre-commit-hooks-poc
-    rev: v0.1.17
+    rev: v0.1.18
     hooks:
     -   id: run-org-hooks
