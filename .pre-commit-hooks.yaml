@@ -5,7 +5,7 @@
   entry: print-arguments
   language: python
 - id: run-org-hooks
-  name: organisational wide pre-commit hookd
+  name: run org hooks
   description: some description
   entry: run-org-hooks
   language: python
