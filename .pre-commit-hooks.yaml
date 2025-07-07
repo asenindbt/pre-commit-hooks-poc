@@ -8,5 +8,5 @@
   name: run org hooks
   description: some description
   entry: run-org-hooks
-  language: script
+  language: python
   verbose: true
