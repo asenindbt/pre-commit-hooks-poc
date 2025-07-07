@@ -213,7 +213,4 @@ __marimo__/
 .python-version
 
 # Temporarily ignoring these files
-pre_commit_hooks/build
-pre_commit_hooks/*.egg-info
-
 .DS_Store
