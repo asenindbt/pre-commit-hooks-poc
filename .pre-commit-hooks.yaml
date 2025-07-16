@@ -4,9 +4,3 @@
   description: some description
   entry: print-arguments
   language: python
-- id: run-org-hooks
-  name: run org hooks
-  description: some description
-  entry: run-org-hooks
-  language: python
-  verbose: true
