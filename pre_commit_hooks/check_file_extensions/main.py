@@ -1,10 +1,15 @@
 # print_arguments/main.py
+from __future__ import annotations
+
 import argparse
 
 
 class DataFileDetectedException(Exception):
     def __init__(self):
-        self.message = "Files containing data is detected. Data files are not allowed to be pushed into GitHub."
+        self.message = (
+            'Files containing data is detected. '
+            'Data files are not allowed to be pushed into GitHub.'
+        )
         super().__init__(self.message)
 
 
@@ -12,11 +17,14 @@ class CheckFileExtensions:
     def __init__(self, argparse):
         self.argparse = argparse
         self.invalid_extensions = \
-            (".csv", ".tsv", ".xlsx", ".xls", ".parquet", ".json", ".xml", ".png", ".pdf", ".rdata", ".rds")
+            (
+                '.csv', '.tsv', '.xlsx', '.xls', '.parquet',
+                '.json', '.xml', '.png', '.pdf', '.rdata', '.rds',
+            )
 
     def check_commit_file_extensions(self):
         parser = self.argparse.ArgumentParser()
-        parser.add_argument("filenames", nargs="*")
+        parser.add_argument('filenames', nargs='*')
         args = parser.parse_args()
 
         self.print_arguments(args.filenames)
@@ -30,9 +38,11 @@ class CheckFileExtensions:
 
 
 def main():
-    filenames = CheckFileExtensions(argparse=argparse).check_commit_file_extensions()
+    filenames = CheckFileExtensions(
+        argparse=argparse,
+    ).check_commit_file_extensions()
     print(filenames)
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
