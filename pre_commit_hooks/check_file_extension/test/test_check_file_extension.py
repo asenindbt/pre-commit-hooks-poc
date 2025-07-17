@@ -3,10 +3,10 @@ from __future__ import annotations
 from unittest import TestCase
 from unittest.mock import MagicMock
 
-from pre_commit_hooks.check_file_extensions.main import (
+from pre_commit_hooks.check_file_extension.main import (
     CheckFileExtensions,
 )
-from pre_commit_hooks.check_file_extensions.main import (
+from pre_commit_hooks.check_file_extension.main import (
     DataFileDetectedException,
 )
 
