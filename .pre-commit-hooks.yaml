@@ -4,3 +4,4 @@
   description: Checks the file extension of files that are commited in Git. If file(s) matches one of the listed arguments, the pre-commit hook will flag this up.
   entry: check-file-extension
   language: python
+  args: ["--log-level"]
