@@ -50,26 +50,29 @@ class CheckFileExtensions:
 
         return commited_filenames
 
-    def get_log_level(self, parser):
-        # TODO: This is causing an issue in getting the args from the command line
-        parser.add_argument('--log-level', type=str)
-        args = parser.parse_args()
-
-        if args.log_level is None:
-            return None
-        else:
-            log_level = args.log_level.upper()
-
-            if log_level != 'ERROR' and log_level != 'WARNING':
-                raise InvalidLogLevelException()
-            else:
-                return log_level
+    # def get_log_level(self, parser):
+    #     # TODO: This is causing an issue in getting the args from the command line
+    #     parser.add_argument('--log-level', type=str)
+    #     args = parser.parse_args()
+    #
+    #     if args.log_level is None:
+    #         return None
+    #     else:
+    #         log_level = args.log_level.upper()
+    #
+    #         if log_level != 'ERROR' and log_level != 'WARNING':
+    #             raise InvalidLogLevelException()
+    #         else:
+    #             return log_level
 
     def get_commited_filename_extensions(self, parser):
         parser.add_argument('--log-level', type=str)
         parser.add_argument('filenames', nargs='*')
 
         args = parser.parse_args()
+
+        print(args.log_level)
+        print(args.filenames)
 
         log_level = None
 
