@@ -66,7 +66,7 @@ class CheckFileExtensions:
     #             return log_level
 
     def get_commited_filename_extensions(self, parser):
-        parser.add_argument('--log-level', nargs='+', type=str)
+        parser.add_argument('--log-level', type=str)
         parser.add_argument('filenames', nargs='*', type=str)
 
         args = parser.parse_args()
